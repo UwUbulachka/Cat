@@ -4,11 +4,11 @@ require 'sinatra'
 require 'sinatra/reloader'
 require "sinatra/activerecord"
 
-set :database, "sqlite3:barbershop.db"
+set :database, "sqlite3:cathop.db"
 
-class Client < ActiveRecord::Base # создание сущности
+class Cat < ActiveRecord::Base #модель
+end	
 
-end
 
 get '/' do
   erb :index
